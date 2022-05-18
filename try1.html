@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online Report</title>
+
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background: center;
+        min-height: 50%;
+
+
+    }
+    .box
+
+    {
+        position: relative;
+width: 200px;
+height: 200px;
+
+
+
+    }
+
+    .box span{
+
+        position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+transform-origin: center;
+transform-style: preserve-3d;
+transform: rotateY(calc(var(--i)*45deg))
+translatez(400px);
+    }
+box span img{
+position: absolute;
+top: 0;
+left: 0;
+object-fit: cover;
+width: 100%;
+
+}
+
+
+
+    
+
+
+
+    }
+    
+    
+    </style>
+</head>
+<body>
+   Enter Uname: <input  list="citys" type="text" name="city">
+   Enter Password:<input list="pass" type="password" name="pass">
+    <datalist id="citys">
+<option value="Agra"></option>
+<option value="delhi"></option>
+<option value="pune"></option>
+
+    </datalist>
+    <div class="box">
+        <span style="--i:1;">
+    <img src="IMG-20180226-WA0062.jpg">
+</span>
+<span style="--i:2;">
+    <img src="IMG_20200213_215940_163.jpg">
+</span>
+</div>
+</body>
+</html>
